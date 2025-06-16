@@ -77,6 +77,43 @@ body {
     }
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    background-image: url("./../images/background.jpg");
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    padding: 2.5rem;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.about-me .content {
+    display: flex;
+    justify-content: space-around; 
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.about-me .left-content {
+    width: 40%;
+}
+
+.about-me h5 {
+    text-align: justify;
+}
+
+.about-me p {
+    font-size: medium;
+    text-align: justify;
+}
+
 .main {
     margin-top: 3rem;
     height: 3000px;
