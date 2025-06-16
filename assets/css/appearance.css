@@ -114,6 +114,16 @@ body {
     text-align: justify;
 }
 
+@media (max-width: 1000px) {
+    .about-me .content .right-content {
+        display: none;
+    }
+
+    .about-me .content .left-content {
+        width: 90%;
+    }
+}
+
 .main {
     margin-top: 3rem;
     height: 3000px;
