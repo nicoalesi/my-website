@@ -11,8 +11,8 @@ body {
 
 .navbar-container {
     display: flex;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
     padding-left: 10vw;
     padding-right: 10vw;
     justify-content: center;
@@ -134,9 +134,26 @@ body {
 .education .content {
     display: flex;
     gap: 2.5rem;
+    width: 100%;
+    max-width: 1600px;
+    justify-content: space-evenly;
+}
+
+.divider {
+    margin: 1rem 0rem;
+}
+
+.education .section {
+    min-width: 250px;
+    max-width: 400px;
+}
+
+.education .section p {
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
 }
 
 .main {
-    margin-top: 3rem;
+    margin-top: 3.55rem;
     height: 3000px;
 }
