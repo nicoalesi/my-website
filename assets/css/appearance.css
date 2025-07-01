@@ -129,6 +129,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
+    padding: 2.5rem;
 }
 
 .education .content {
@@ -159,6 +160,14 @@ body {
         align-items: center;
         width: 90%;
     }
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2.5rem;
 }
 
 .main {
