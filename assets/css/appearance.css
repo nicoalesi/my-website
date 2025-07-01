@@ -144,13 +144,21 @@ body {
 }
 
 .education .section {
-    min-width: 250px;
     max-width: 400px;
 }
 
 .education .section p {
     margin-top: 0.4rem;
     font-size: 0.8rem;
+}
+
+@media (max-width: 1000px) {
+    .education .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
 }
 
 .main {
