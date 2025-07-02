@@ -150,7 +150,7 @@ body {
 
 .education .section p {
     margin-top: 0.4rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: justify;
 }
 
@@ -191,21 +191,28 @@ body {
 }
 
 .slider::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .project {
-  background: #4caf50;
-  color: white;
-  font-size: 1.5rem;
-  border-radius: 12px;
-  scroll-snap-align: start;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  user-select: none;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background: #4caf50;
+    font-size: 1.5rem;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem;
+    gap: 1rem;
+    border-radius: 0.8rem;
+}
+
+.project p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.project .image {
+    border-radius: 0.5rem;
 }
 
 .main {
