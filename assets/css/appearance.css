@@ -255,7 +255,14 @@ body {
     max-width: 100px;
 }
 
+footer {
+    display: flex;
+    background-color: #1d1da1;
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
 .main {
-    margin-top: 3.55rem;
-    height: 3000px;
+    margin-top: 3.5rem;
 }
