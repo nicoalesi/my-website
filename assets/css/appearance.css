@@ -3,7 +3,26 @@
     margin: 0;
     box-sizing: border-box;
     font-family: system-ui, Arial, Helvetica, sans-serif;
+    color: var(--text-color);
 }
+
+:root {
+    --bg-color: hsl(0, 0%, 90%);
+    --bg-color-light: hsl(0, 0%, 95%);
+    --bg-color-dark: hsl(0, 0%, 85%);
+    --text-color: hsl(0, 0%, 10%);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: hsl(0, 0%, 10%);
+        --bg-color-light: hsl(0, 0%, 15%);
+        --bg-color-dark: hsl(0, 0%, 5%);
+        --text-color: hsl(0, 0%, 90%);
+        --text-color-light: hsl(0, 0%, 95%);
+    }
+}
+
 
 body {
     font-size: 1.25rem;
@@ -21,7 +40,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #0077FF;
+    background-color: var(--bg-color-dark);
+    color: var(--text-color);
 }
 
 .navbar {
@@ -81,16 +101,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10rem;
-    background-image: url("./../images/background.jpg");
+    height: 25rem;
+    background-image: url("./../images/bg1.jpg");
+    background-size: 100%;
+    color: var(--text-color-light);
 }
 
 .about-me {
     display: flex;
     align-items: center;
-    padding: 2.5rem;
+    padding: 5rem 2.5rem;
     flex-direction: column;
     gap: 2.5rem;
+    background-color: var(--bg-color-dark);
 }
 
 .about-me .content {
@@ -129,7 +152,8 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
-    padding: 2.5rem;
+    padding: 5rem 2.5rem;
+    background-color: var(--bg-color);
 }
 
 .education .content {
@@ -163,13 +187,26 @@ body {
     }
 }
 
+.separator {
+    background-color: var(--bg-color);
+}
+
+.separator hr {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+
+
 .experience {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
-    padding: 2.5rem;
+    padding: 5rem 2.5rem;
     text-align: justify;
+    background-color: var(--bg-color);
 }
 
 .portfolio {
@@ -177,7 +214,8 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
-    padding: 2.5rem;
+    padding: 5rem 2.5rem;
+    background-color: var(--bg-color-dark);
 }
 
 .slider {
@@ -264,5 +302,6 @@ footer {
 }
 
 .main {
-    margin-top: 3.5rem;
+    width: 100%;
+    margin-top: 3.2rem;
 }
