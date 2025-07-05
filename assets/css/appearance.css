@@ -28,6 +28,10 @@ body {
     font-size: 1.25rem;
 }
 
+h3 {
+    font-size: 1.8rem;
+}
+
 .navbar-container {
     display: flex;
     padding-top: 0.8rem;
@@ -109,6 +113,10 @@ body {
     color: var(--text-color-light);
 }
 
+.header h1 {
+    font-size: 3.2rem;
+}
+
 @media (max-width: 700px) {
     .header {
         background-image: url("./../images/header-bg-2x.jpg");
@@ -124,17 +132,17 @@ body {
 .about-me {
     display: flex;
     align-items: center;
-    padding: 5rem 2.5rem;
+    padding: 4rem 2.5rem;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 4rem;
     background-color: var(--bg-color-dark);
 }
 
 .about-me .content {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-evenly;
     gap: 2.5rem;
-    width: 100%;
+    width: 90%;
     max-width: 1600px;
 }
 
@@ -143,15 +151,20 @@ body {
 }
 
 .about-me h5 {
+    font-size: 1.1rem;
     text-align: justify;
 }
 
 .about-me p {
-    font-size: medium;
+    font-size: 1.1rem;
     text-align: justify;
 }
 
 @media (max-width: 1000px) {
+    .about-me .content {
+        justify-content: center;   
+    }
+
     .about-me .content .right-content {
         display: none;
     }
@@ -165,30 +178,39 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2.5rem;
-    padding: 5rem 2.5rem;
+    gap: 4rem;
+    padding: 4rem 2.5rem;
     background-color: var(--bg-color);
 }
 
 .education .content {
     display: flex;
     gap: 2.5rem;
-    width: 100%;
+    width: 90%;
     max-width: 1600px;
     justify-content: space-evenly;
 }
 
 .divider {
-    margin: 1rem 0rem;
+    margin: 0.7rem 0rem;
 }
 
 .education .section {
-    max-width: 400px;
+    max-width: max(400px, 32%);
+}
+
+.education .section h5 {
+    font-size: 1.2rem;
+}
+
+.education .section h6 {
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .education .section p {
-    margin-top: 0.4rem;
-    font-size: 1rem;
+    margin-top: 1.1rem;
+    font-size: 1.1rem;
     text-align: justify;
 }
 
@@ -211,24 +233,27 @@ body {
     border-color: rgba(255, 255, 255, 0.3);
 }
 
-
-
 .experience {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2.5rem;
-    padding: 5rem 2.5rem;
-    text-align: justify;
+    gap: 4rem;
+    padding: 4rem 2.5rem;
     background-color: var(--bg-color);
+}
+
+.experience .content h5 {
+    text-align: justify;
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 
 .portfolio {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2.5rem;
-    padding: 5rem 2.5rem;
+    gap: 4rem;
+    padding: 4rem 2.5rem;
     background-color: var(--bg-color-dark);
 }
 
@@ -271,8 +296,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2.5rem;
-    padding: 2.5rem;
+    gap: 4rem;
+    padding: 4rem 2.5rem;
 }
 
 .skills .content {
@@ -284,8 +309,8 @@ body {
 .contacts {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
-    padding: 2.5rem;
+    gap: 4rem;
+    padding: 4rem 2.5rem;
     align-items: center;
 }
 
