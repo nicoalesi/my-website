@@ -103,7 +103,9 @@ body {
     justify-content: center;
     height: 25rem;
     background-image: url("./../images/bg1.jpg");
-    background-size: 100%;
+    background-size: cover;
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
     color: var(--text-color-light);
 }
 
