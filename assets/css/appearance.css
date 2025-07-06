@@ -20,6 +20,7 @@
         --bg-color-dark: hsl(0, 0%, 5%);
         --text-color: hsl(0, 0%, 90%);
         --text-color-light: hsl(0, 0%, 95%);
+        --text-color-dark: hsl(0, 0%, 80%);
     }
 }
 
@@ -186,7 +187,7 @@ h3 {
 .education .content {
     display: flex;
     gap: 2.5rem;
-    width: 90%;
+    width: 100%;
     max-width: 1600px;
     justify-content: space-evenly;
 }
@@ -206,6 +207,7 @@ h3 {
 .education .section h6 {
     font-size: 1rem;
     font-weight: 400;
+    color: var(--text-color-dark);
 }
 
 .education .section p {
@@ -218,8 +220,11 @@ h3 {
     .education .content {
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         width: 90%;
+    }
+
+    .education .section {
+        max-width: none;
     }
 }
 
@@ -316,10 +321,48 @@ h3 {
     background-color: var(--bg-color);
 }
 
+.skills h5 {
+    font-size: 1.3rem;
+}
+
 .skills .content {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    font-size: 1.1rem;
+}
+
+.skills .hard,
+.skills .soft {
+    width: 36%;
+}
+
+.skills ul {
+    list-style: none;
+    font-style: italic;
+}
+
+.skills ul ul {
+    font-style: normal;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    list-style: circle;
+}
+
+.skills ul ul li {
+    color: var(--text-color-dark);
+}
+
+@media (max-width: 800px) {
+    .skills .content {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .skills .hard,
+    .skills .soft {
+        width: 100%;
+    }
 }
 
 .contacts {
